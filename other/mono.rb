@@ -7,6 +7,8 @@ class Mono < Formula
 
   def install
     args = ["--prefix=#{prefix}",
+            "--with-sgen=yes",
+            "--with-gc=sgen",
             "--with-glib=embedded",
             "--enable-nls=no"]
 
